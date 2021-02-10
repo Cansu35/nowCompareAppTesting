@@ -1,4 +1,4 @@
-package utilities;
+package com.nowcompare.utilities;
 
 
 import org.junit.Assert;
