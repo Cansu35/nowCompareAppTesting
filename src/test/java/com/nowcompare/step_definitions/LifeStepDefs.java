@@ -3,6 +3,7 @@ package com.nowcompare.step_definitions;
 import com.nowcompare.pages.Dashboard;
 import com.nowcompare.pages.LifePage;
 import com.nowcompare.pages.SavingsPage;
+import com.nowcompare.utilities.BrowserUtils;
 import com.nowcompare.utilities.ConfigurationReader;
 import com.nowcompare.utilities.Driver;
 import io.cucumber.java.en.Given;
