@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com/nowcompare/step_definitions",
-        dryRun = true,
-        tags = "@wip"
+        dryRun = false,
+        tags = "@life"
 )
 public class CukesRunner {
 
