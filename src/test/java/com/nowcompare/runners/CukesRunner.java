@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/nowcompare/step_definitions",
         dryRun = false,
-        tags = "@dashboard"
+        tags = "@tag"
 )
 public class CukesRunner {
 
