@@ -50,8 +50,8 @@ Feature: smoke test suit
       | Employee Benefits    |
       | Saving               |
       | UK Pension Transfers |
-      | Jobs                 |
-      | Wellness             |
+      | Jobss                 |
+      | Wellnesss             |
 
 	#{color:#de350b}*USER STORY:*{color}
 	#
