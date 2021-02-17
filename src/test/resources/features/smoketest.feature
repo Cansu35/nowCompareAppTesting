@@ -1,3 +1,4 @@
+@NOW-13
 Feature: smoke test suit
 
   Background:
@@ -25,11 +26,11 @@ Feature: smoke test suit
       | module    | sub                  | title                   |
       | Insurance | Health               | Expat Health Insurance  |
       | Insurance | Life                 | Expat Life Insurance    |
-#      | Insurance | Employee Benefits    | Expat Employee Benefits |
-#      | Finance   | Savings              | Expat Savings Plans     |
-#      | Finance   | UK Pension Transfers | UK Pension Transfer     |
-#      | Lifestyle | Jobs                 | Expat Jobs              |
-#      | Lifestyle | Wellness             | Expat Wellness          |
+      | Insurance | Employee Benefits    | Expat Employee Benefits |
+      | Finance   | Savings              | Expat Savings Plans     |
+      | Finance   | UK Pension Transfers | UK Pension Transfer     |
+      | Lifestyle | Jobs                 | Expat Jobs              |
+      | Lifestyle | Wellness             | Expat Wellness          |
 
 	#{color:#de350b}*USER STORY:*{color}
 	#
