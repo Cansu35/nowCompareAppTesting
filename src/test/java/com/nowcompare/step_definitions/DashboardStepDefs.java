@@ -6,6 +6,7 @@ import com.nowcompare.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 
 import java.util.List;
 

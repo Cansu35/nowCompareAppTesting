@@ -1,8 +1,12 @@
-Feature: Dashboard page
+@dashboard
+Feature:As a user, I should be able to navigate to main features
 
-  @dashboard
-  Scenario: test the all products menu options
-    Given the user in application dashboard
+  Background:
+  #@NOW-12
+    Given go to the application main page
+
+  @NOW-2
+  Scenario: All Products Button Test
     When the user click on the All Products button
     Then verify the menu has following options
       | Health               |
@@ -13,9 +17,8 @@ Feature: Dashboard page
       | Jobs                 |
       | Wellness             |
 
-  @tag
+  @NOW-5
   Scenario Outline: check all modules <title>
-    Given the user in application dashboard
     When  the user navigate to "<module>" and "<sub>"
     Then  the user should get "NowCompare | <title>"
     Examples:

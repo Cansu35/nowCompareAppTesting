@@ -21,6 +21,15 @@ public abstract class BasePage {
     @FindBy(xpath = "//a[normalize-space()='All Products']")
     public WebElement allProductsButton;
 
+    @FindBy(xpath = "//a[.='Request Call Back']")
+    public WebElement requestCallBackButton;
+
+    @FindBy(xpath = "//span[normalize-space()='Call Us Now']")
+    public WebElement callUsNowButton;
+
+    @FindBy(xpath = "//tbody/tr/td[2]")
+    public WebElement hongKongPhoneNumber;
+
 
     public void navigateTo(String tab, String bar) {
 

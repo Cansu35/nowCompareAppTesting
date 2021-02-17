@@ -7,10 +7,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {"json:target/cucumber.json",
+                "html:target/default-html-reports",
+                "rerun:target/rerun.txt",},
         features = "src/test/resources/features",
         glue = "com/nowcompare/step_definitions",
         dryRun = false,
-        tags = "@tag"
+        tags = "@NOW-14 or @NOW-8"
 )
 public class CukesRunner {
 
