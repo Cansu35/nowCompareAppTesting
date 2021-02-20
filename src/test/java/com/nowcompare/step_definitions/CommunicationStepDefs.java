@@ -18,7 +18,7 @@ public class CommunicationStepDefs {
 
     @Then("the user should get the request call back page")
     public void the_user_should_get_the_request_call_back_page() {
-        Assert.assertEquals("verify the url", "https://www.nowcompare'e'.com/request-call-back/", Driver.get().getCurrentUrl());
+        Assert.assertEquals("verify the url", "https://www.nowcompare.com/request-call-back/", Driver.get().getCurrentUrl());
     }
 
     @When("the user click on the Call us now button")

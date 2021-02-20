@@ -66,3 +66,36 @@ Feature: smoke test suit
   Scenario: Request Call Back Button Test
     When the user click the request call back button
     Then the user should get the request call back page
+
+	#{color:#de350b}*USER STORY:*{color}
+	#
+	#As a user, I should be able to navigate to main features. 
+	#
+	# 
+	#
+	#{color:#00875a}*ACCEPTANCE CRITERIA:*{color}
+	#
+	# _{color:#172b4d}As a user, I should be able to click Insurance button so I should be able to see Health, Life, Employee Benefits sub modules
+	#
+	#{color}_
+  @NOW-15
+  Scenario: Insurance-health blank input box test
+    When the user navigate to "Insurance" and "Health"
+    And the user click the Get Quotes button
+    Then the user should get warning message "Please select an item in the list."
+
+	#{color:#de350b}*USER STORY:*{color}
+	#
+	#As a user, I should be able to navigate to main features. 
+	#
+	# 
+	#
+	#{color:#00875a}*ACCEPTANCE CRITERIA:*{color}
+	#
+	# _{color:#172b4d}As a user, I should be able to click Insurance button so I should be able to see Health, Life, Employee Benefits sub modules{color}_
+  @NOW-16
+  Scenario: Insurance-health positive input box test
+    When the user navigate to "Insurance" and "Health"
+    And the user chooses 4  insured people select "Australia" and select requirements randomly
+    And the user click the Get Quotes button
+    Then the user should be in the url "https://www.nowcompare.com/international/en/health-insurance/quote/detail="

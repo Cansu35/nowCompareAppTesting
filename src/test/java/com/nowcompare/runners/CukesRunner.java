@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/nowcompare/step_definitions",
         dryRun = false,
-        tags = "@NOW-13"
+        tags = "@NOW-16"
 )
 public class CukesRunner {
 

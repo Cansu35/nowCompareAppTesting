@@ -30,6 +30,9 @@ public abstract class BasePage {
     @FindBy(xpath = "//tbody/tr/td[2]")
     public WebElement hongKongPhoneNumber;
 
+    @FindBy(css = ".site-header")
+    public WebElement sideHeader;
+
 
     public void navigateTo(String tab, String bar) {
 

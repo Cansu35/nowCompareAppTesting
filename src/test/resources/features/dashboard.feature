@@ -30,3 +30,17 @@ Feature:As a user, I should be able to navigate to main features
       | Finance   | UK Pension Transfers | UK Pension Transfer     |
       | Lifestyle | Jobs                 | Expat Jobs              |
       | Lifestyle | Wellness             | Expat Wellness          |
+
+  @NOW-15
+  Scenario: Insurance-health blank input box test
+    When the user navigate to "Insurance" and "Health"
+    And the user click the Get Quotes button
+    Then the user should get warning message "Please select an item in the list."
+
+
+  @NOW-16
+  Scenario: Insurance-health positive input box test
+    When the user navigate to "Insurance" and "Health"
+    And the user chooses 4  insured people select "Australia" and select requirements randomly
+    And the user click the Get Quotes button
+    Then the user should be in the url "https://www.nowcompare.com/international/en/health-insurance/quote/detail="
