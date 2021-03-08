@@ -41,17 +41,17 @@ Feature: smoke test suit
 	#{color:#00875a}*ACCEPTANCE CRITERIA:*{color}
 	#
 	#_{color:#172b4d}As a user, I should be able to click All Products button so I should be able to see all products.{color}_
-#  @NOW-2 @NOW-6
-#  Scenario: All Products Button Test
-#    When the user click on the All Products button
-#    Then verify the menu has following options
-#      | Health               |
-#      | Life                 |
-#      | Employee Benefits    |
-#      | Saving               |
-#      | UK Pension Transfers |
-#      | Jobs                 |
-#      | Wellness             |
+  @NOW-2 @NOW-6
+  Scenario: All Products Button Test
+    When the user click on the All Products button
+    Then verify the menu has following options
+      | Health               |
+      | Life                 |
+      | Employee Benefits    |
+      | Saving               |
+      | UK Pension Transfers |
+      | Jobs                 |
+      | Wellness             |
 
 	#{color:#de350b}*USER STORY:*{color}
 	#
@@ -98,4 +98,4 @@ Feature: smoke test suit
     When the user navigate to "Insurance" and "Health"
     And the user chooses 4  insured people select "Australia" and select requirements randomly
     And the user click the Get Quotes button
-    Then the user should be in the url "https://www.nowcompare.com/international/en/health-insurance/quote/detail=....."
+    Then the user should be in the url "https://www.nowcompare.com/international/en/health-insurance/quote/detail="
